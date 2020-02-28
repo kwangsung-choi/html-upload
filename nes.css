@@ -1,0 +1,4 @@
+/*Autoprefixer는 ---.css파일에서 적용 잘 안됨*/
+div{
+    display: -webkit-box;display: flex;
+}
