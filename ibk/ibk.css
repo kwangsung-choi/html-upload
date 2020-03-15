@@ -1,0 +1,119 @@
+/* ibk.html의 스타일시트*/
+/*초기화*/
+h1, ul, li, div, a, a:link, a:visited, a:hover, a:active{
+margin:0; padding: 0; 
+list-style:none; 
+text-decoration: none; 
+color:#575757
+}
+
+/*header 작업*/
+#wrap #header{
+    width: 990px;
+    height: 100px; 
+    margin:0 auto;
+    position: relative;
+    border-bottom: 5px solid blue;
+}
+#wrap > div{
+    height: 100px;
+    border-bottom:5px solid skyblue;
+}
+#wrap #header > h1{
+    display: inline-block;
+    font-size: 0;
+    width: 173px; height: 41px;
+    background:url("./images/logo.gif")
+
+} 
+/*header*/
+/*확대, 축소버튼*/
+#wrap #header .btn{
+    float:right;
+}
+#wrap #header .btn button{
+    /* float:; */
+}
+
+/*메뉴 바*/
+#wrap #header #nav_menu{
+    position: absolute;
+    right:0;
+}
+#wrap #header ul{
+    text-align: left;
+    font:bold 20px "nanumGothic";
+}
+#wrap #header #nav_menu li ul{
+    display: none;
+    width: 180px;
+    border:1px solid gray;
+    position: absolute;
+    top:41px;   right:-40%;   
+}
+#wrap #header #nav_menu > li{
+    float:left;
+    padding:5px 10px 5px 10px;
+    height: 33px;
+    position: relative;
+}
+#nav_menu .arrow:hover {
+    background:url('./images/arrow.gif') no-repeat center bottom;
+}
+
+#wrap #header #nav_menu li:hover ul{
+    display: block;
+}
+#wrap #header #nav_menu li ul li{
+    display: block;
+    background:#fff;
+    font:bold 15px "nanumGothic";
+    padding:4px 0 4px 10px;
+}
+
+
+/*main 작업*/
+section{width:990px;
+        overflow:hidden;
+        margin:0 auto;
+    }
+
+section #banner ul{width:3000px; position: relative;}
+section #banner ul li{
+    display:inline-block;
+    float:left;
+}
+
+
+/* label - 라디오 버튼*/
+section #banner ul input{display:none;}
+
+section #banner div{
+    display:inline-block;
+    position: absolute;
+    top:450px;
+    border:1px solid red;
+    width:150px;
+    z-index:90;
+    transition:3s;
+}
+section #banner div label{
+    margin:0 10px;
+}
+section #banner div label:hover {  /*버튼 이미지 바꾸기*/
+       
+}
+section #banner ul input:nth-of-type(1):checked ~ li:nth-of-type(1){
+    position: absolute;
+    left:0;
+}
+section #banner ul input:nth-of-type(2):checked ~ li:nth-of-type(2){
+    position: absolute;
+    left:0;
+}
+section #banner ul input:nth-of-type(3):checked ~ li:nth-of-type(3){
+    position: absolute;
+    left:0;
+}
+
+
